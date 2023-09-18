@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --dark-bg: #1f2937;
+    --main-txt-color: #f9faf8;
+    --secondary-txt-color: #e5e7eb;
+    --logo-txt-color: #f9faf8;
+    --btn-color: #3882f6;
+    --info-txt-color: #1f2937;
+    --section-bg: #e5e7eb;
+    --quote-bg: #e5e7eb;
+    --quote-txt-color: #1f2937;
+}
+
+body{
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+    display: flex; gap: 20px;
+}
+
+header, .hero, .random{
+    width: 100%;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 2vw 10vw;
+    background-color: var(--dark-bg);
+}
+.logo{
+    color: var(--logo-txt-color);
+    font-size: 24px;
+}
+header ul{
+    color: var(--secondary-txt-color);
+    font-size: 18px;
+}
+.hero{
+    width: 100vw;
+    padding: 6vw 10vw;
+    
+}
+.hero *{
+    color: var(--secondary-txt-color);
+}
+.hero #hero-title{
+    font-size: 48px;
+    color: var(--logo-txt-color);
+    width: 30vw;
+}
+#hero-subtext{
+    width: 32vw;
+    font-size: 18px;
+}
+.hero button{
+    background-color: var(--btn-color);
+    width: 8vw; height: 2vw;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5vw;
+}
+.hero-img{
+    background-color: #6b7480;
+    width: 35vw;
+    height: 16vw;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.random{
+    background-color: white;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.random ul{
+    gap: 4vw;
+}
+.info-item{
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    gap: 0.5vw;
+}
+.info-img{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px solid var(--btn-color);
+}
+.info-txt{
+    font-size: 12px;
+    text-align: center;
+    width: 150px;
+}
