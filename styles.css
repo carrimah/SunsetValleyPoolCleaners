@@ -28,10 +28,12 @@ ul{
     display: flex; gap: 20px;
 }
 
-header, .hero, .random{
+header, section{
     width: 100%;
     display: flex; justify-content: space-between; align-items: center;
     padding: 2vw 10vw;
+}
+header, .hero, footer{
     background-color: var(--dark-bg);
 }
 .logo{
@@ -67,14 +69,13 @@ header ul{
     margin-top: 0.5vw;
 }
 .hero-img{
-    background-color: #6b7480;
+    background-color: #6d747d;
     width: 35vw;
     height: 16vw;
     display: flex; justify-content: center; align-items: center;
 }
 
 .random{
-    background-color: white;
     flex-direction: column;
     gap: 4vw;
 }
@@ -96,4 +97,49 @@ header ul{
     font-size: 12px;
     text-align: center;
     width: 150px;
+}
+
+.quote{
+    background-color: var(--quote-bg);
+    color: var(--quote-txt-color);
+    font-size: 28px; font-style: italic; font-weight: 300;
+    padding: 10vw 26vw;
+}
+.quote .footer{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.action{
+    justify-content: center;
+    padding: 6vw 10vw;
+}
+.action-box{
+    display: flex; justify-content: space-between; align-items: center;
+    background-color: var(--btn-color);
+    width: 70vw; height: 8vw;
+    padding: 2vw 8vw;
+    border-radius: 5px;
+}
+.action-box button{
+    border: 1px solid white;
+    width: 7vw; height: 2vw;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--main-txt-color);
+}
+.action-box h3{
+    font-weight: 500;
+    color: var(--main-txt-color);
+}
+.action-box p{
+    color: var(--secondary-txt-color);
+}
+
+footer{
+    display: flex; justify-content: center; align-items: center;
+    color: #c4c6ca;
+    font-size: 0.9rem;
+    width: 100%; height: 5vw;
 }
