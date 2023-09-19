@@ -77,6 +77,7 @@ header ul{
 
 .random{
     flex-direction: column;
+    padding-bottom: 8vw;
     gap: 4vw;
 }
 
