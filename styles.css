@@ -96,7 +96,9 @@ header li>a:hover, header li:hover, .logo:hover{
 }
 
 .random ul{
+    justify-content: center;
     gap: 4vw;
+    flex-wrap: wrap;
 }
 .info-item{
     display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -109,8 +111,8 @@ header li>a:hover, header li:hover, .logo:hover{
     font-weight: bold;
 }
 .info-img{
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
     border: 2px solid var(--btn-color);
     object-fit: cover;
@@ -184,7 +186,6 @@ footer{
 .footer-info{
     width: 100%; padding: 2vw;
     display: flex; gap: 4vw;
-    grid-template-columns: repeat(2, 1fr);
 }
 footer .story{
     width: 40vw;
@@ -209,4 +210,76 @@ footer button{
     width: 15vw; height: 3vw;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+/*MOBILE-LAST(SORRY)*/
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 20px;
+    }
+    header li{
+        display: none;
+    }
+    header .logo span{
+       display: none;
+    }
+    header .logo:after{
+        content: "SV Pool Cleaning";
+    }
+    .hero{
+        width: 100%;
+        text-align: center;
+    }
+    .hero #hero-title, #hero-subtext{
+        width: 100%;
+    }
+    #hero-subtext{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .hero-right{
+        display: none;
+    }
+    .hero button{
+        width: 200px;
+        height: 40px;
+        margin: 10px;
+    }
+    .quote{
+        font-size: 20px;
+        padding: 10vw 15vw;
+    }
+    .quote .footer{
+        font-size: 12px;
+    }
+    .action{
+        height: 40vh;
+    }
+    .action-box{
+        padding: 2vw 4vw;
+        height: 26vh; width: 90vw;
+        flex-direction: column; justify-content: center; gap: 10px;
+    }
+    .action-box button, footer button{
+        width: 200px;
+        height: 40px;
+        align-self: flex-start;
+    }
+    .footer-info{
+        width: 100vw;
+        flex-direction: column;
+        padding: 4vw;
+        gap: 6vw;
+    }
+    footer .story p{
+        display: none;
+    }
+    footer .story, footer .service, footer .contact{
+        width: 100vw;
+        gap: 4vw;
+    }
+    .info-img{
+        height: 200px;
+        width: 300px;
+    }
 }
