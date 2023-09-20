@@ -40,11 +40,12 @@ header, .hero, footer{
     color: var(--logo-txt-color);
     font-size: 24px;
 }
-header ul{
+header ul li > a, li{
     color: var(--secondary-txt-color);
     font-size: 18px;
+    text-decoration: none;
 }
-header li:hover, .logo:hover{
+header li>a:hover, header li:hover, .logo:hover{
     cursor: pointer;
     font-weight: bold;
     color: #3882f6;
@@ -58,7 +59,7 @@ header li:hover, .logo:hover{
     color: var(--secondary-txt-color);
 }
 .hero #hero-title{
-    font-size: 48px;
+    font-size: 40px;
     color: var(--logo-txt-color);
     width: 30vw;
 }
@@ -82,6 +83,8 @@ header li:hover, .logo:hover{
     width: 35vw;
     height: 16vw;
     display: flex; justify-content: center; align-items: center;
+    object-fit: cover;
+    filter: brightness(1.3);
 }
 
 .random{
@@ -103,10 +106,12 @@ header li:hover, .logo:hover{
     font-weight: bold;
 }
 .info-img{
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     border-radius: 20px;
     border: 2px solid var(--btn-color);
+    object-fit: cover;
+    filter: brightness(1.2);
 }
 .info-img:hover{
     border: 4px solid;
@@ -165,4 +170,8 @@ footer{
     color: #c4c6ca;
     font-size: 0.9rem;
     width: 100%; height: 5vw;
+}
+
+.power-img{
+    object-position: right;
 }
